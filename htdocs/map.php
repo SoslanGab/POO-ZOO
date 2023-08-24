@@ -13,31 +13,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="assets/js/min/script-min.js"></script>
   </head>
 
+
+
+
+
+
   <body class="green-bg">
-    <header role="banner">
-      <div class="container clearfix">
-        <div class="hero">
-                <span>                
-                    <svg viewBox="0 0 1320 300">
-                        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                            sooozooo
-                        </text>
-                    </svg>	
-                </span>
-          <div class="hero-content-wrap">
-            <div class="load-animal left"><img src="assets/imgs/tiger.png" class="tossing" alt=""></div>
-            <a href="map.php" class="load-button left bounce">Allons Explorer!
-              <img src="assets/imgs/load-button.png" class="tiger" alt="">
-            </a>
-            <div class="load-animal right"><img src="assets/imgs/panda.png" class="tossing" alt=""></div>
-          </div>
+      <div class="row">
+        <div class="col-12">
+          <section class="align-items-center mx-auto">
+              <div class="map-right-side mx-auto">
+                  <a href="main-animal.html" class="section-map map-one">asian rainforest</a>
+                  <a href="panda.html" class="section-map map-two">african rain forest</a>
+                  <a href="#self" class="section-map map-three">african plains</a>
+                  <a href="#self" class="section-map map-four">kid zone</a>
+              </div>
+          </section>
         </div>
       </div>
-    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
   </body>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
