@@ -8,6 +8,8 @@ require 'Zoo.php';
 class Employee {
 
     private $name;
+    private $age;
+    private $gender;
     
     public function __construct($name) {
     $this->name = $name;

@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>  <html class="no-js ie ie6 lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>     <html class="no-js ie ie7 lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>     <html class="no-js ie ie8 lt-ie10 lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9]>     <html class="no-js ie ie9 lt-ie10" lang="en"> <![endif]-->
-<!--[if IE 10]>    <html class="no-js ie ie10" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Zoo</title>
-    <meta name="description" content="Zoo Atlanta">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/min/script-min.js"></script>
-  </head>
+
+<?php include 'linksscripts.php' ?>
 
   <body class="green-bg">
+    <navbar class="">
+        <nav class="navbar bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a href="">
+                <i class="fa-solid fa-screwdriver-wrench" style="color: #c76305;">Admin</i>
+              </a>
+            </div>
+        </nav>
+    </navbar>
     <header role="banner">
       <div class="container clearfix">
         <div class="hero">
@@ -40,4 +32,3 @@
       </div>
     </header>
   </body>
-</html>
