@@ -11,15 +11,16 @@ class EmployeManager
     }
 
 
-    public function add(Employe $employe)
+    public function addEmploye($name, $age, $gender)
     {
-        $req = $this->db->prepare("INSERT INTO poozoo(name, age, gender) VALUES (:name, :age, :gender)");
-        $req->bindValue(':name', $hero->getName());
-        $req->bindValue(':age', $hero->getAge());
-        $req->bindValue(':gender', $hero->getGender());
+        $req = $this->db->prepare("INSERT INTO zoo_employee(name, age, gender) VALUES (:name, :age, :gender)");
+        $req->bindValue(':name', $name);
+        $req->bindValue(':age', $age);
+        $req->bindValue(':gender', $gender);
         $req->execute();
-        $hero->setId($this->db->lastInsertId());
     }
+
+
 
 
 

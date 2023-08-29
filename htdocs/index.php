@@ -12,16 +12,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+              <a class="nav-link" href="#map">Map</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Animaux</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Enclos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Employés</a>
+              <a class="nav-link" href="employee.php">Employés</a>
             </li>
           </ul>
         </div>
