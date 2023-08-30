@@ -68,16 +68,16 @@ class Employee {
 }
 
 
-function feedAnimals(Enclosure $enclosure){
+// function feedAnimals(Enclosure $enclosure){
   
-    $animals = $enclosure->getAnimals();
+//     $animals = $enclosure->getAnimals();
 
-    foreach($animals as $animal) {
+//     foreach($animals as $animal) {
     
-        $animal->eat();
+//         $animal->eat();
 
        
-        $pdo->prepare("UPDATE animals SET hunger=0 WHERE id=?")
-            ->execute([true, $animal->getId()]);
-    }
-}
+//         $pdo->prepare("UPDATE animals SET hunger=0 WHERE id=?")
+//             ->execute([true, $animal->getId()]);
+//     }
+// }

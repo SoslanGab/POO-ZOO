@@ -68,6 +68,7 @@ class Animal {
     public function setType($type){
         $this->type = $type;
     }
+
 }
 
 

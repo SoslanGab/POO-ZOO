@@ -1,38 +1,31 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>  <html class="no-js ie ie6 lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>     <html class="no-js ie ie7 lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>     <html class="no-js ie ie8 lt-ie10 lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9]>     <html class="no-js ie ie9 lt-ie10" lang="en"> <![endif]-->
-<!--[if IE 10]>    <html class="no-js ie ie10" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Zoo</title>
-    <meta name="description" content="Zoo Atlanta">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/min/script-min.js"></script>
-  </head>
+<?php
+ include 'linksscripts.php';
+
+ 
+require_once __DIR__ . '/config/db.php';
+require_once __DIR__ . '/config/autoload.php';
+$animalsManager = new AnimalsManager($db);
+  $animals = $AnimalsManager->findAnimals();
+
+
+?>
 
 <body class="green2-bg">
+<?php foreach ($animals as $animals) { ?>
   <section class="animal-wrap">
     <div class="container clearfix">
-      <h1>Panda</h1>
+      <h1><?=$animals->getName()?></h1>
       <div class="hero banner">
-
         <div class="thought-wrap">
           <div href="#self" class="thought pulse" onclick="panda2.playclip()">
             <figure><img src="assets/imgs/panda2.png" alt="">
-              <figcaption>My Sound</figcaption>
+              <figcaption>Guerrir</figcaption>
             </figure>
           </div>
 
           <div href="#self" class="thought pulse"  onclick="panda3.playclip()">
             <figure><img src="assets/imgs/monkey3.png" alt="">
-              <figcaption>My Home</figcaption>
+              <figcaption>Nettoyer</figcaption>
             </figure>
           </div>
         </div>
@@ -40,7 +33,7 @@
         <div class="thought-wrap">
           <div href="#self" class="thought floating" onclick="panda1.playclip()">
             <figure><img src="assets/imgs/panda1.png" alt="">
-              <figcaption>My Food</figcaption>
+              <figcaption>Nourrir</figcaption>
             </figure>
           </div>
            <img src="assets/imgs/panda.png" alt="" class="animal fadeIn">
@@ -55,6 +48,10 @@
       <a href="main-animal.html"><img src="assets/imgs/arrow.png" alt="" class="arrow"></a>
     </div>
   </section>
+<?php } ?>
+
+
+
 
   <section class="animal-wrap">
     <div class="container clearfix">
