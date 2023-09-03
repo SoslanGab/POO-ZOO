@@ -1,12 +1,13 @@
 <?php 
 
 require 'Animal.php';
-require 'Enclosure.php';
-require 'Zoo.php';
+// require 'Enclosure.php';
+// require 'Zoo.php';
 
 
-class Employee {
+class Employe {
 
+    private $id;
     private $name;
     private $age;
     private $gender;
@@ -26,46 +27,46 @@ class Employee {
         if (isset($data['age'])) {
             $this->setAge($data['age']);
         }
-        if (isset($data['type'])) {
-            $this->setType($data['type']);
+        if (isset($data['gender'])) {
+            $this->setGender($data['gender']);
         }
     } 
 
-
-
-        //GETTER
-        public function getId(){
-            return $this->id;
-        }
+    // GETTERS
+    public function getId(){
+        return $this->id;
+    }
     
-        public function getName(){
-            return $this->name;
-        }
-        public function getAge(){
-            return $this->age;
-        }
+    public function getName(){
+        return $this->name;
+    }
     
-        public function getGender(){
-            return $this->type;
-        }
+    public function getAge(){
+        return $this->age;
+    }
+    
+    public function getGender(){
+        return $this->gender;
+    }
 
-        //SETTER
-            public function setId($id){
-                $this->id = $id;
-            }
+    // SETTERS
+    public function setId($id){
+        $this->id = $id;
+    }
 
-            public function setName($name){
-                $this->name = $name;
-            }
+    public function setName($name){
+        $this->name = $name;
+    }
 
-            public function setAge($age){
-                $this->health_point = $health_point;
-            }
+    public function setAge($age){
+        $this->age = $age;
+    }
 
-            public function setGender($type){
-                $this->type = $type;
-            }
+    public function setGender($gender){
+        $this->gender = $gender;
+    }
 }
+
 
 
 // function feedAnimals(Enclosure $enclosure){

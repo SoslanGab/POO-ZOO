@@ -24,3 +24,7 @@ svg text {
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 	}
 }
+header .container .hero .hero-content-wrap .load-button{
+	text-decoration: none;
+    color: #e96333;
+}

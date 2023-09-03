@@ -15,6 +15,9 @@
               <a class="nav-link" href="#map">Map</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="createemployee.php">Crée Employés</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="employee.php">Employés</a>
             </li>
           </ul>

@@ -19,6 +19,18 @@ class EmployeManager
         $req->bindValue(':gender', $gender);
         $req->execute();
     }
+    public function findEmploye()
+    {
+        $stmt = $this->db->query("SELECT * FROM zoo_employee");
+        $employes = [];
+
+        while ($row = $stmt->fetch()) {
+            $employe = new Employe($row);
+            $employes[] = $employe;
+        }
+
+        return $employes;
+    }
 
 
 
